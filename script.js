@@ -1,13 +1,29 @@
-/*var sum = 0;
-console.log(sum);*/
- var sum;
- sum = 5
-// console.log(sum)
+// ****** Finding the largest element in the array ******//
+/*function bigEleinArr(){
+   var arr = [1,-3,-4,-5,7,]
+  var lar = arr[0];
+  for(let i = 0 ; i<=arr.length-1;i++){
+     if(arr[i]>lar){
+        lar = arr[i];
+     }
+  }
+  return lar;
+}
+var c = bigEleinArr()
+console.log(c)*/
 
- function add(x = 10, y =10){
-    var sum = x + y;
-    console.log(sum)
-    return sum;
+// ****** Finding the largest element in the array in ES6  ******//
+const largerElement = () =>{
+   var arr = [10,20,-50,1000]
+   var lar = arr[0];
+   for(let i = 0 ; i<=arr.length-1;i++){
+      if(arr[i]>lar){
+         lar = arr[i];
+      }
+   }
+   return lar;
  }
+ var c = largerElement()
+ console.log(c)
+
  
-add(15,15)
